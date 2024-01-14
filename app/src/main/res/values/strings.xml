@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Time_text">Time</string>
+    <string name="cardView_logo_image">cardView logo image</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="about">About</string>
+    <string name="temp">Temperate</string>
+    <string name="currency">Currency</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- res/values/strings.xml -->
+    <string-array name="time_name">
+        <item>Second</item>
+        <item>MileSecond</item>
+        <item>MicroSecond</item>
+        <item>NanoSecond</item>
+        <item>PicoSecond</item>
+        <item>FemtoSecond</item>
+        <item>AttoSecond</item>
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>FortNight</item>
+        <item>Decade</item>
+        <item>Century</item>
+        <item>Century</item>
+    </string-array>
+
+
+</resources>
