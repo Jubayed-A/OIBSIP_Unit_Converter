@@ -17,9 +17,6 @@
         <item>MileSecond</item>
         <item>MicroSecond</item>
         <item>NanoSecond</item>
-        <item>PicoSecond</item>
-        <item>FemtoSecond</item>
-        <item>AttoSecond</item>
         <item>Minute</item>
         <item>Hour</item>
         <item>Day</item>
@@ -28,6 +25,7 @@
         <item>FortNight</item>
         <item>Decade</item>
         <item>Century</item>
+        <item>LeapYear</item>
     </string-array>
 
 
