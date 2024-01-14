@@ -33,7 +33,7 @@ class TimeFragment : Fragment() {
         binding.fromSection.setAdapter(arrayAdapter)
         binding.fromSection.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position).toString()
-//            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
             binding.fromSectionText.text = selectedOption
         }
 
@@ -42,7 +42,7 @@ class TimeFragment : Fragment() {
         binding.toSection.setAdapter(arrayAdapter2)
         binding.toSection.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position).toString()
-//            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
             binding.toSectionText.text = selectedOption
         }
 
