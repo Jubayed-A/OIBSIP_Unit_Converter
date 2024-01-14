@@ -33,8 +33,7 @@ class TimeFragment : Fragment() {
         binding.fromSection.setAdapter(arrayAdapter)
         binding.fromSection.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position).toString()
-            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT)
-                .show()
+//            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
             binding.fromSectionText.text = selectedOption
         }
 
@@ -43,8 +42,7 @@ class TimeFragment : Fragment() {
         binding.toSection.setAdapter(arrayAdapter2)
         binding.toSection.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position).toString()
-            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT)
-                .show()
+//            Toast.makeText(requireContext(), "You Selected $selectedOption", Toast.LENGTH_SHORT).show()
             binding.toSectionText.text = selectedOption
         }
 
@@ -65,7 +63,7 @@ class TimeFragment : Fragment() {
                 val result = performTimeConversion(inputNumber, fromMenuOption, toMenuOption)
 
                 // Display the result or use it as needed
-                Toast.makeText(requireContext(), "Result: $result", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(requireContext(), "Result: $result", Toast.LENGTH_SHORT).show()
                 binding.outputFrom.setText("$inputNumber  $fromMenuOption")
                 binding.outputTo.setText("$result $toMenuOption")
                 binding.welcomeOutput.setText("$fromMenuOption To $toMenuOption Conversion Result")
@@ -79,7 +77,7 @@ class TimeFragment : Fragment() {
     }
 
     // Function to perform time conversion
-    private fun performTimeConversion(inputNumber: Double, fromOption: String, toOption: String): Double {
+    private fun performTimeConversion(inputNumber: Double, fromOption: String, toOption: String): Any {
         // Conversion factors
         val secondsInMinute = 60
         val minutesInHour = 60
@@ -89,23 +87,72 @@ class TimeFragment : Fragment() {
             // second to MileSecond
             fromOption == "Second" && toOption == "MileSecond" ->
                 inputNumber * 1000
+            // second to MicroSecond
+            fromOption == "Second" && toOption == "MicroSecond" ->
+                inputNumber * 1000000
+            // second to NanoSecond
+            fromOption == "Second" && toOption == "NanoSecond" ->
+                inputNumber * 1000000000
             // second to minute
             fromOption == "Second" && toOption == "Minute" ->
                 inputNumber / secondsInMinute
             // second to hour
             fromOption == "Second" && toOption == "Hour" ->
                 inputNumber / (secondsInMinute * minutesInHour)
+            // second to Day
+            fromOption == "Second" && toOption == "Day" -> {
+                inputNumber / 86400
+            }
+            // second to Week
+            fromOption == "Second" && toOption == "Week" -> {
+                inputNumber / (86400 * 7)
+            }
+            // second to FortNight
+            fromOption == "Second" && toOption == "FortNight" -> {
+                inputNumber / (86400 * 14)
+            }
+            // second to Month
+            fromOption == "Second" && toOption == "Month" -> {
+                inputNumber / (86400 * 30)
+            }
+            // second to Year
+            fromOption == "Second" && toOption == "Year" -> {
+                inputNumber / (86400 * 365)
+            }
+            // second to LeapYear
+            fromOption == "Second" && toOption == "LeapYear" -> {
+                inputNumber / (86400 * 366)
+            }
+            // second to Decade
+            fromOption == "Second" && toOption == "Decade" -> {
+                inputNumber / (31536000 * 10)
+            }
+            // second to Century
+            fromOption == "Second" && toOption == "Century" -> {
+                if (inputNumber <= 10000000){
+                    inputNumber * 0.0
+                    Toast.makeText(requireContext(), "Input larger then 10,000,000", Toast.LENGTH_SHORT).show()
+                }else{
+                    inputNumber * (1.0 / (31536000 * 100))
+                }
+            }
+
             // minute to second
             fromOption == "Minute" && toOption == "Second" ->
                 inputNumber * secondsInMinute
             // minute to hour
             fromOption == "Minute" && toOption == "Hour" ->
                 inputNumber / minutesInHour
+
+
             // hour to second
             fromOption == "Hour" && toOption == "Second" ->
                 inputNumber * (minutesInHour * secondsInMinute)
             // hour to minute
             fromOption == "Hour" && toOption == "Minute" ->
+                inputNumber * minutesInHour
+            // hour to minute
+            fromOption == "Hour" && toOption == "MileSecond" ->
                 inputNumber * minutesInHour
 
             else -> inputNumber // Default case: return the input as is
