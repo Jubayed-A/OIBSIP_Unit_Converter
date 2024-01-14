@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
 
         // start time fragment
         binding.timeSection.setOnClickListener {
-//            Toast.makeText(activity, "hello i am back", Toast.LENGTH_SHORT).show()
+            // Toast.makeText(activity, "hello i am back", Toast.LENGTH_SHORT).show()
             Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_timeFragment)
         }
         // start currency fragment
