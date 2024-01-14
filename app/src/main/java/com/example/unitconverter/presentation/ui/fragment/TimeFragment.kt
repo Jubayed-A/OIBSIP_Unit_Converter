@@ -96,8 +96,8 @@ class TimeFragment : Fragment() {
         // Perform time conversion based on the selected options
         return when {
             // second section start here
-            // second to MileSecond
-            fromOption == "Second" && toOption == "MileSecond" ->
+            // second to Millisecond
+            fromOption == "Second" && toOption == "Millisecond" ->
                 inputNumber * 1000
             // second to MicroSecond
             fromOption == "Second" && toOption == "MicroSecond" ->

@@ -14,7 +14,7 @@
     <!-- res/values/strings.xml -->
     <string-array name="time_name">
         <item>Second</item>
-        <item>MileSecond</item>
+        <item>Millisecond</item>
         <item>MicroSecond</item>
         <item>NanoSecond</item>
         <item>Minute</item>
