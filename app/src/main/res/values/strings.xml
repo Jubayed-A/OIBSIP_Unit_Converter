@@ -17,17 +17,15 @@
         <item>MileSecond</item>
         <item>MicroSecond</item>
         <item>NanoSecond</item>
-        <item>PicoSecond</item>
-        <item>FemtoSecond</item>
-        <item>AttoSecond</item>
         <item>Minute</item>
         <item>Hour</item>
         <item>Day</item>
         <item>Week</item>
-        <item>Month</item>
         <item>FortNight</item>
+        <item>Month</item>
+        <item>Year</item>
+        <item>LeapYear</item>
         <item>Decade</item>
-        <item>Century</item>
         <item>Century</item>
     </string-array>
 
