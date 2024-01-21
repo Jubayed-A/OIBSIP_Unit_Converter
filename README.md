@@ -2,7 +2,7 @@
 
 <div align="center">  
   <img src="https://github.com/Jubayed-A/OIBSIP-To-Do-Apps/assets/106887389/9e6bf29a-c7e1-4fc3-a9f7-2aa2bc61eda5" alt="Weather" style="width: 200px; height: 150px; object-fit: contain; margin-right: 10px;">  
- <h1 style="display: inline-block; margin: 0; vertical-align: middle;">TO-DO Application</h1>  
+ <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Unit Converter Application</h1>  
 </div>  
 
 Welcome to the TO-DO App project, This is a simple Android application for taking TO_DO, built using the MVVM architecture and Room Database. And this app is built for Oaisis Infobyte for Internship Project.
