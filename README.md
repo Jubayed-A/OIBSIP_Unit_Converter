@@ -1,7 +1,7 @@
 ## This is a unit converter app for andoid platfor
 
 <div align="center">  
-  <img src="https://github.com/Jubayed-A/OIBSIP_Unit_Converter/assets/106887389/2b13159a-56d9-4f73-8d5e-0ee82a686b7e" alt="Weather" style="width: 200px; height: 150px; object-fit: contain; margin-right: 10px;">  
+  <img src="https://github.com/Jubayed-A/OIBSIP_Unit_Converter/assets/106887389/2b13159a-56d9-4f73-8d5e-0ee82a686b7e" alt="Weather" style="width: 150px; height: 150px; object-fit: contain; margin-right: 10px;">  
  <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Unit Converter Application</h1>  
 </div>  
 
