@@ -5,7 +5,7 @@
  <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Unit Converter Application</h1>  
 </div>  
 
-Welcome to the TO-DO App project, This is a simple Android application for taking TO_DO, built using the MVVM architecture and Room Database. And this app is built for Oaisis Infobyte for Internship Project.
+Welcome to the Unit Converter App project, This is a simple Android application for Convert multiple unit sections, built using the MVVM architecture and Room Database. This app is built for Oaisis Infobyte for Internship Project.
 <!--
 **APK: https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/releases/download/v1.0/notes_app.apk** 
 
@@ -53,7 +53,7 @@ We've embraced modern technologies to make this app robust and efficient:
 1. Clone the Repository:
 
 ### Clone the Repository:
-git clone: https://github.com/Jubayed-A/OIBSIP-To-Do-Apps.git
+git clone: https://github.com/Jubayed-A/OIBSIP_Unit_Converter.git
 
 2. Open in Android Studio:
 - Open Android Studio and choose "Open an existing Android Studio project."
@@ -74,3 +74,8 @@ Contributions are welcome! Feel free to open issues or submit pull requests to h
 
 ### License
 This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
+
+### Project Status
+
+This project is currently completed, with future updates planned to incorporate new features and improvements.\
+We appreciate your interest and welcome any contributions.
