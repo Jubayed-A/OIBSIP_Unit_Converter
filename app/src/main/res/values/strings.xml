@@ -10,6 +10,35 @@
     <string name="currency">Currency</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="usd">USD</string>
+    <string name="eu">EU</string>
+    <string name="meter">Meter</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="convert">Convert</string>
+    <string name="length_welcome_text">Welcome to \nLength Section</string>
+    <string name="hint_length">enter a number to conver any length...</string>
+    <string name="output_length_text">Meter To Centimeter\n Conversion Result</string>
+    <string name="to">To</string>
+    <string name="exm_c_m">1000 C.M</string>
+    <string name="exm_m">10 M</string>
+    <string name="welcome_currency_text">Welcome to \nCurrency Section</string>
+    <string name="hint_currency">enter a amout convert currency...</string>
+    <string name="input_currency_text">USD To EU\n Conversion Result</string>
+    <string name="exm_usd">100 USD</string>
+    <string name="exm_eu">92.22 EU</string>
+    <string name="welcome_temp_text">Welcome to \nTemperature Section</string>
+    <string name="hint_temp">enter any number to covert temp</string>
+    <string name="output_welcome_text_temp">Celsius To Fahrenheit\n Conversion Result</string>
+    <string name="exm_c">30° C</string>
+    <string name="exm_f">86° F</string>
+    <string name="output_welcome_text_time">NanoSecond To MicroSecond \nConversion Result</string>
+    <string name="exm_s">3 S</string>
+    <string name="exm_m_s">3000 M.S</string>
+    <string name="second">Second</string>
+    <string name="input_welcome_text_time">Welcome to \nTime Section</string>
+    <string name="hint_time_section">enter a time to convert any time...</string>
 
     <!-- res/values/strings.xml -->
     <string-array name="time_name">
