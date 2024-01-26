@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Welcome to Currency Section"
+                android:text="Welcome to Temperature Section"
                 android:textSize="36sp" />
 
             <!--this is the input the number section-->
@@ -45,7 +45,7 @@
                     android:id="@+id/inputValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="hint"
+                    android:hint="Enter any number to covert temp"
                     android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -79,7 +79,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="none"
-                            android:text="Second" />
+                            android:text="@string/celsius" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Second"
+                        android:text="@string/celsius"
                         android:textSize="16sp" />
                 </LinearLayout>
                 <!--to section-->
@@ -112,7 +112,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="none"
-                            android:text="Second" />
+                            android:text="@string/fahrenheit" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <TextView
@@ -120,7 +120,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Second"
+                        android:text="@string/fahrenheit"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -128,11 +128,11 @@
 
             <Button
                 android:id="@+id/timeCalculate"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="12dp"
-                android:text="Calculate"
+                android:text="Convert"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -145,6 +145,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:visibility="visible"
         app:strokeColor="#673AB7"
         app:cardCornerRadius="15dp"
         app:cardElevation="12dp">
@@ -160,7 +161,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="NanoSecond To MicroSecond Convertion Result"
+                android:text="Celsius To Fahrenheit\n Convertion Result"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -172,7 +173,7 @@
                 android:background="@drawable/rounded_corner"
                 android:elevation="20dp"
                 android:gravity="center"
-                android:text="3 S "
+                android:text="30° C"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -194,7 +195,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_corner"
                 android:gravity="center"
-                android:text="3000 M.S "
+                android:text="86° F"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
