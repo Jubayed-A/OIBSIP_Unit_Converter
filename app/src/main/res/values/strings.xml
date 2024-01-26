@@ -39,6 +39,9 @@
     <string name="second">Second</string>
     <string name="input_welcome_text_time">Welcome to \nTime Section</string>
     <string name="hint_time_section">enter a time to convert any time...</string>
+    <string name="this_is_a_logo_for_splash_screen">this is a logo for spalsh scrren</string>
+    <string name="dev_name">By\nJubayed Alam</string>
+    <string name="splash_text">Unit Converter</string>
 
     <!-- res/values/strings.xml -->
     <string-array name="time_name">
