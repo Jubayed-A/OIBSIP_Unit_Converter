@@ -183,13 +183,14 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/cardView_logo_image"
-                    android:src="@drawable/ic_about" />
+                    android:src="@drawable/ruler"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/about"
+                    android:text="@string/length"
                     android:textColor="@color/text_second"
                     android:textSize="18sp"
                     android:textStyle="bold" />
