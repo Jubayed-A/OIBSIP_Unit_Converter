@@ -1,7 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id ("com.google.devtools.ksp") // Apply KSP plugin
 }
 
 android {
@@ -56,12 +57,14 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
     // Dagger - Hilt
-    implementation ("com.google.dagger:hilt-android:2.28-alpha")
-    kapt ("com.google.dagger:hilt-android-compiler:2.28-alpha")
+    implementation("com.google.dagger:hilt-android:2.40.5")
+    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
 
-// AndroidX Hilt - Lifecycle ViewModel
-    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    kapt ("androidx.hilt:hilt-compiler:1.1.0")
+    // KSP dependencies for Dagger Hilt
+    ksp("com.google.dagger:hilt-android-compiler:2.40.5")
+    ksp("androidx.hilt:hilt-compiler:1.1.0")
+
+
 
 
     // Activity KTX for viewModels()
