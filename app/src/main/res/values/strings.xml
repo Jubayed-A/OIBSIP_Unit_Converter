@@ -44,7 +44,7 @@
     <string name="splash_text">Unit Converter</string>
 
     <!-- res/values/strings.xml -->
-<!--    for time section -->
+    <!--    for time section -->
     <string-array name="time_name">
         <item>Second</item>
         <item>Millisecond</item>
@@ -62,7 +62,7 @@
         <item>Century</item>
     </string-array>
 
-<!--    for currency section -->
+    <!--    for currency section -->
     <string-array name="currencies">
         <item>USD</item>
         <item>EUR</item>
