@@ -20,7 +20,7 @@ class CurrencyFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentCurrencyBinding.inflate(layoutInflater,container, false)
+        binding = FragmentCurrencyBinding.inflate(layoutInflater, container, false)
 
         // ArrayAdapter for the dropdown menus
         // time conversion section
@@ -28,7 +28,11 @@ class CurrencyFragment : Fragment() {
         val toMenu = resources.getStringArray(R.array.currencies)
 
         // from menu drop down section
-        val arrayAdapter = ArrayAdapter(requireContext(), com.example.unitconverter.R.layout.drop_down_item, fromMenu)
+        val arrayAdapter = ArrayAdapter(
+            requireContext(),
+            com.example.unitconverter.R.layout.drop_down_item,
+            fromMenu
+        )
         binding.fromSection.setAdapter(arrayAdapter)
         binding.fromSection.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position).toString()
@@ -64,9 +68,11 @@ class CurrencyFragment : Fragment() {
                 fromCurrency == getString(R.string.usd) && toCurrency == getString(R.string.eu) -> {
                     inputValueStr * usdToEuRate
                 }
+
                 fromCurrency == getString(R.string.eu) && toCurrency == getString(R.string.usd) -> {
                     inputValueStr * euToUsdRate
                 }
+
                 else -> {
                     // Handle other conversions or display error
                     0.0
