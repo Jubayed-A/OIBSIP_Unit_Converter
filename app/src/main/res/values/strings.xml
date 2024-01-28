@@ -13,7 +13,7 @@
     <string name="celsius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="usd">USD</string>
-    <string name="eu">EU</string>
+    <string name="eu">EUR</string>
     <string name="meter">Meter</string>
     <string name="centimeter">Centimeter</string>
     <string name="convert">Convert</string>
@@ -25,7 +25,7 @@
     <string name="exm_m">10 M</string>
     <string name="welcome_currency_text">Welcome to \nCurrency Section</string>
     <string name="hint_currency">enter a amout convert currency...</string>
-    <string name="input_currency_text">USD To EU\n Conversion Result</string>
+    <string name="input_currency_text">USD To EUR\n Conversion Result</string>
     <string name="exm_usd">100 USD</string>
     <string name="exm_eu">92.22 EU</string>
     <string name="welcome_temp_text">Welcome to \nTemperature Section</string>
@@ -39,11 +39,12 @@
     <string name="second">Second</string>
     <string name="input_welcome_text_time">Welcome to \nTime Section</string>
     <string name="hint_time_section">enter a time to convert any time...</string>
-    <string name="this_is_a_logo_for_splash_screen">this is a logo for spalsh scrren</string>
+    <string name="this_is_a_logo_for_splash_screen">this is a logo for splash screen</string>
     <string name="dev_name">By\nJubayed Alam</string>
     <string name="splash_text">Unit Converter</string>
 
     <!-- res/values/strings.xml -->
+<!--    for time section -->
     <string-array name="time_name">
         <item>Second</item>
         <item>Millisecond</item>
@@ -59,6 +60,15 @@
         <item>LeapYear</item>
         <item>Decade</item>
         <item>Century</item>
+    </string-array>
+
+<!--    for currency section -->
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>BDT</item>
+        <item>INR</item>
+        <item>CAD</item>
     </string-array>
 
 
