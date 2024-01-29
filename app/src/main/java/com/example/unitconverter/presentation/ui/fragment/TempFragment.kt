@@ -41,7 +41,15 @@ class TempFragment : Fragment() {
             binding.toSectionText.text = selectedOption
         }
 
+        binding.tempConvert.setOnClickListener {
+            convertTemperature()
+        }
+
         return binding.root
+    }
+
+    private fun convertTemperature() {
+        TODO("Not yet implemented")
     }
 
 }
