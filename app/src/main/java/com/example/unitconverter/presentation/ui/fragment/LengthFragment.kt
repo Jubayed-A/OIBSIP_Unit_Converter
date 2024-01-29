@@ -57,6 +57,15 @@ class LengthFragment : Fragment() {
             val convertedLength = when {
                 fromUnit == "Meter" && toUnit == "Centimeter" -> meterToCentimeter(inputLength)
                 fromUnit == "Centimeter" && toUnit == "Meter" -> centimeterToMeter(inputLength)
+                fromUnit == "Meter" && toUnit == "Millimeter" -> meterToMillimeter(inputLength)
+                fromUnit == "Millimeter" && toUnit == "Meter" -> millimeterToMeter(inputLength)
+                fromUnit == "Meter" && toUnit == "Micrometer" -> meterToMicrometer(inputLength)
+                fromUnit == "Micrometer" && toUnit == "Meter" -> micrometerToMeter(inputLength)
+                fromUnit == "Meter" && toUnit == "Nanometer" -> meterToNanometer(inputLength)
+                fromUnit == "Nanometer" && toUnit == "Meter" -> nanometerToMeter(inputLength)
+                fromUnit == "Meter" && toUnit == "Kilometer" -> meterToKilometer(inputLength)
+                fromUnit == "Kilometer" && toUnit == "Meter" -> kilometerToMeter(inputLength)
+
                 // Add more conversion cases here
                 else -> inputLength
             }
@@ -75,5 +84,38 @@ class LengthFragment : Fragment() {
     private fun centimeterToMeter(centimeter: Float): Float {
         return centimeter / 100
     }
+
+    private fun meterToMillimeter(meter: Float): Float {
+        return meter * 1000
+    }
+
+    private fun millimeterToMeter(millimeter: Float): Float {
+        return millimeter / 1000
+    }
+
+    private fun meterToMicrometer(meter: Float): Float {
+        return meter * 1_000_000
+    }
+
+    private fun micrometerToMeter(micrometer: Float): Float {
+        return micrometer / 1_000_000
+    }
+
+    private fun meterToNanometer(meter: Float): Float {
+        return meter * 1_000_000_000
+    }
+
+    private fun nanometerToMeter(nanometer: Float): Float {
+        return nanometer / 1_000_000_000
+    }
+
+    private fun meterToKilometer(meter: Float): Float {
+        return meter / 1000
+    }
+
+    private fun kilometerToMeter(kilometer: Float): Float {
+        return kilometer * 1000
+    }
+
 
 }
