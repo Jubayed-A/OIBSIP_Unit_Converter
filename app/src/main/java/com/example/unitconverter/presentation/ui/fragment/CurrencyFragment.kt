@@ -96,6 +96,7 @@ class CurrencyFragment : Fragment() {
                     "INR" to 55.96  // Example conversion rate, please replace with actual rates
                 )
             )
+
             val conversionRate = conversionRates[fromCurrency]?.get(toCurrency)
             if (conversionRate != null) {
                 val convertedAmount = inputValueStr * conversionRate
