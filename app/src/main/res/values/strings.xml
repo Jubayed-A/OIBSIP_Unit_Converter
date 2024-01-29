@@ -78,5 +78,15 @@
         <item>Kelvin</item>
     </string-array>
 
+    <!--    for currency section -->
+    <string-array name="lengthSection">
+        <item>Meter</item>
+        <item>Centimeter</item>
+        <item>MilliMeter</item>
+        <item>MicroMeter</item>
+        <item>NanoMeter</item>
+        <item>KiloMeter</item>
+    </string-array>
+
 
 </resources>
