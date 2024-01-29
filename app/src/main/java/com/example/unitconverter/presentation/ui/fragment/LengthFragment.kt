@@ -62,33 +62,84 @@ class LengthFragment : Fragment() {
                 fromUnit == "Meter" && toUnit == "Kilometer" -> meterToKilometer(inputLength)
 
                 fromUnit == "Centimeter" && toUnit == "Meter" -> centimeterToMeter(inputLength)
-                fromUnit == "Centimeter" && toUnit == "Millimeter" -> centimeterToMillimeter(inputLength)
-                fromUnit == "Centimeter" && toUnit == "Micrometer" -> centimeterToMicrometer(inputLength)
-                fromUnit == "Centimeter" && toUnit == "Nanometer" -> centimeterToNanometer(inputLength)
-                fromUnit == "Centimeter" && toUnit == "Kilometer" -> centimeterToKilometer(inputLength)
+                fromUnit == "Centimeter" && toUnit == "Millimeter" -> centimeterToMillimeter(
+                    inputLength
+                )
+
+                fromUnit == "Centimeter" && toUnit == "Micrometer" -> centimeterToMicrometer(
+                    inputLength
+                )
+
+                fromUnit == "Centimeter" && toUnit == "Nanometer" -> centimeterToNanometer(
+                    inputLength
+                )
+
+                fromUnit == "Centimeter" && toUnit == "Kilometer" -> centimeterToKilometer(
+                    inputLength
+                )
 
                 fromUnit == "Millimeter" && toUnit == "Meter" -> millimeterToMeter(inputLength)
-                fromUnit == "Millimeter" && toUnit == "Centimeter" -> millimeterToCentimeter(inputLength)
-                fromUnit == "Millimeter" && toUnit == "Micrometer" -> millimeterToMicrometer(inputLength)
-                fromUnit == "Millimeter" && toUnit == "Nanometer" -> millimeterToNanometer(inputLength)
-                fromUnit == "Millimeter" && toUnit == "Kilometer" -> millimeterToKilometer(inputLength)
+                fromUnit == "Millimeter" && toUnit == "Centimeter" -> millimeterToCentimeter(
+                    inputLength
+                )
+
+                fromUnit == "Millimeter" && toUnit == "Micrometer" -> millimeterToMicrometer(
+                    inputLength
+                )
+
+                fromUnit == "Millimeter" && toUnit == "Nanometer" -> millimeterToNanometer(
+                    inputLength
+                )
+
+                fromUnit == "Millimeter" && toUnit == "Kilometer" -> millimeterToKilometer(
+                    inputLength
+                )
 
                 fromUnit == "Micrometer" && toUnit == "Meter" -> micrometerToMeter(inputLength)
-                fromUnit == "Micrometer" && toUnit == "Centimeter" -> micrometerToCentimeter(inputLength)
-                fromUnit == "Micrometer" && toUnit == "Millimeter" -> micrometerToMillimeter(inputLength)
-                fromUnit == "Micrometer" && toUnit == "Nanometer" -> micrometerToNanometer(inputLength)
-                fromUnit == "Micrometer" && toUnit == "Kilometer" -> micrometerToKilometer(inputLength)
+                fromUnit == "Micrometer" && toUnit == "Centimeter" -> micrometerToCentimeter(
+                    inputLength
+                )
+
+                fromUnit == "Micrometer" && toUnit == "Millimeter" -> micrometerToMillimeter(
+                    inputLength
+                )
+
+                fromUnit == "Micrometer" && toUnit == "Nanometer" -> micrometerToNanometer(
+                    inputLength
+                )
+
+                fromUnit == "Micrometer" && toUnit == "Kilometer" -> micrometerToKilometer(
+                    inputLength
+                )
 
                 fromUnit == "Nanometer" && toUnit == "Meter" -> nanometerToMeter(inputLength)
-                fromUnit == "Nanometer" && toUnit == "Centimeter" -> nanometerToCentimeter(inputLength)
-                fromUnit == "Nanometer" && toUnit == "Millimeter" -> nanometerToMillimeter(inputLength)
-                fromUnit == "Nanometer" && toUnit == "Micrometer" -> nanometerToMicrometer(inputLength)
+                fromUnit == "Nanometer" && toUnit == "Centimeter" -> nanometerToCentimeter(
+                    inputLength
+                )
+
+                fromUnit == "Nanometer" && toUnit == "Millimeter" -> nanometerToMillimeter(
+                    inputLength
+                )
+
+                fromUnit == "Nanometer" && toUnit == "Micrometer" -> nanometerToMicrometer(
+                    inputLength
+                )
+
                 fromUnit == "Nanometer" && toUnit == "Kilometer" -> nanometerToKilometer(inputLength)
 
                 fromUnit == "Kilometer" && toUnit == "Meter" -> kilometerToMeter(inputLength)
-                fromUnit == "Kilometer" && toUnit == "Centimeter" -> kilometerToCentimeter(inputLength)
-                fromUnit == "Kilometer" && toUnit == "Millimeter" -> kilometerToMillimeter(inputLength)
-                fromUnit == "Kilometer" && toUnit == "Micrometer" -> kilometerToMicrometer(inputLength)
+                fromUnit == "Kilometer" && toUnit == "Centimeter" -> kilometerToCentimeter(
+                    inputLength
+                )
+
+                fromUnit == "Kilometer" && toUnit == "Millimeter" -> kilometerToMillimeter(
+                    inputLength
+                )
+
+                fromUnit == "Kilometer" && toUnit == "Micrometer" -> kilometerToMicrometer(
+                    inputLength
+                )
+
                 fromUnit == "Kilometer" && toUnit == "Nanometer" -> kilometerToNanometer(inputLength)
 
                 // Add more conversion cases here
@@ -132,12 +183,15 @@ class LengthFragment : Fragment() {
     private fun centimeterToMillimeter(centimeter: Float): Float {
         return centimeter * 10
     }
+
     private fun centimeterToMicrometer(centimeter: Float): Float {
         return centimeter * 10000
     }
+
     private fun centimeterToNanometer(centimeter: Float): Float {
         return centimeter * 10000000
     }
+
     private fun centimeterToKilometer(centimeter: Float): Float {
         return centimeter / 100000
     }
@@ -147,15 +201,19 @@ class LengthFragment : Fragment() {
     private fun millimeterToMeter(millimeter: Float): Float {
         return millimeter / 1000
     }
+
     private fun millimeterToCentimeter(millimeter: Float): Float {
         return millimeter / 10
     }
+
     private fun millimeterToMicrometer(millimeter: Float): Float {
         return millimeter * 1000
     }
+
     private fun millimeterToNanometer(millimeter: Float): Float {
         return millimeter * 1000000
     }
+
     private fun millimeterToKilometer(millimeter: Float): Float {
         return millimeter / 1000000
     }
@@ -165,15 +223,19 @@ class LengthFragment : Fragment() {
     private fun micrometerToMeter(micrometer: Float): Float {
         return micrometer / 1000000
     }
+
     private fun micrometerToCentimeter(micrometer: Float): Float {
         return micrometer / 10000
     }
+
     private fun micrometerToMillimeter(micrometer: Float): Float {
         return micrometer / 1000
     }
+
     private fun micrometerToNanometer(micrometer: Float): Float {
         return micrometer * 1000
     }
+
     private fun micrometerToKilometer(micrometer: Float): Float {
         return micrometer / 1000000000
     }
