@@ -49,7 +49,51 @@ class TempFragment : Fragment() {
     }
 
     private fun convertTemperature() {
-        TODO("Not yet implemented")
+        val inputTemperature = binding.inputValue.text.toString().toFloatOrNull()
+        val fromUnit = binding.fromSection.text.toString()
+        val toUnit = binding.toSection.text.toString()
+
+        if (inputTemperature != null) {
+            val convertedTemperature = when {
+                fromUnit == "Celsius" && toUnit == "Fahrenheit" -> celsiusToFahrenheit(inputTemperature)
+                fromUnit == "Fahrenheit" && toUnit == "Celsius" -> fahrenheitToCelsius(inputTemperature)
+                fromUnit == "Celsius" && toUnit == "Kelvin" -> celsiusToKelvin(inputTemperature)
+                fromUnit == "Kelvin" && toUnit == "Celsius" -> kelvinToCelsius(inputTemperature)
+                fromUnit == "Fahrenheit" && toUnit == "Kelvin" -> fahrenheitToKelvin(inputTemperature)
+                fromUnit == "Kelvin" && toUnit == "Fahrenheit" -> kelvinToFahrenheit(inputTemperature)
+
+                else -> inputTemperature
+            }
+
+            binding.outputFrom.text = String.format("%.2f %s", inputTemperature, fromUnit)
+            binding.outputTo.text = String.format("%.2f %s", convertedTemperature, toUnit)
+            binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
+            binding.outputCardView.visibility = View.VISIBLE
+        }
+    }
+
+    private fun celsiusToFahrenheit(celsius: Float): Float {
+        return celsius * 9 / 5 + 32
+    }
+
+    private fun celsiusToKelvin(celsius: Float): Float {
+        return celsius + 273.15f
+    }
+
+    private fun fahrenheitToCelsius(fahrenheit: Float): Float {
+        return (fahrenheit - 32) * 5 / 9
+    }
+
+    private fun fahrenheitToKelvin(fahrenheit: Float): Float {
+        return (fahrenheit - 32) * 5 / 9 + 273.15f
+    }
+
+    private fun kelvinToCelsius(kelvin: Float): Float {
+        return kelvin - 273.15f
+    }
+
+    private fun kelvinToFahrenheit(kelvin: Float): Float {
+        return kelvin * 9 / 5 - 459.67f
     }
 
 }
