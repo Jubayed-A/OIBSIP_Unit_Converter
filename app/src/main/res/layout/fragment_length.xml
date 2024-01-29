@@ -147,8 +147,8 @@
         android:id="@+id/outputCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:layout_marginTop="20dp"
+        android:visibility="gone"
         app:cardCornerRadius="15dp"
         app:cardElevation="12dp"
         app:strokeColor="#673AB7">
