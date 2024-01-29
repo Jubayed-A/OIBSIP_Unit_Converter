@@ -71,5 +71,12 @@
         <item>CAD</item>
     </string-array>
 
+    <!--    for currency section -->
+    <string-array name="tempSection">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
 
 </resources>
