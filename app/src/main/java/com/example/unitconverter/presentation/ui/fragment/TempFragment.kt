@@ -55,12 +55,23 @@ class TempFragment : Fragment() {
 
         if (inputTemperature != null) {
             val convertedTemperature = when {
-                fromUnit == "Celsius" && toUnit == "Fahrenheit" -> celsiusToFahrenheit(inputTemperature)
-                fromUnit == "Fahrenheit" && toUnit == "Celsius" -> fahrenheitToCelsius(inputTemperature)
+                fromUnit == "Celsius" && toUnit == "Fahrenheit" -> celsiusToFahrenheit(
+                    inputTemperature
+                )
+
+                fromUnit == "Fahrenheit" && toUnit == "Celsius" -> fahrenheitToCelsius(
+                    inputTemperature
+                )
+
                 fromUnit == "Celsius" && toUnit == "Kelvin" -> celsiusToKelvin(inputTemperature)
                 fromUnit == "Kelvin" && toUnit == "Celsius" -> kelvinToCelsius(inputTemperature)
-                fromUnit == "Fahrenheit" && toUnit == "Kelvin" -> fahrenheitToKelvin(inputTemperature)
-                fromUnit == "Kelvin" && toUnit == "Fahrenheit" -> kelvinToFahrenheit(inputTemperature)
+                fromUnit == "Fahrenheit" && toUnit == "Kelvin" -> fahrenheitToKelvin(
+                    inputTemperature
+                )
+
+                fromUnit == "Kelvin" && toUnit == "Fahrenheit" -> kelvinToFahrenheit(
+                    inputTemperature
+                )
 
                 else -> inputTemperature
             }
