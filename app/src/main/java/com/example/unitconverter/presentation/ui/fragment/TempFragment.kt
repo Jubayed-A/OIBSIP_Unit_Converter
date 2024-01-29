@@ -19,7 +19,7 @@ class TempFragment : Fragment() {
     ): View? {
         binding = FragmentTeampBinding.inflate(layoutInflater, container, false)
 
-        // time conversion section
+        // temp conversion section
         val fromMenu = resources.getStringArray(R.array.tempSection)
         val toMenu = resources.getStringArray(R.array.tempSection)
 
