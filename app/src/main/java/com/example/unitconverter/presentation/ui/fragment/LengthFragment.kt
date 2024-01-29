@@ -49,7 +49,30 @@ class LengthFragment : Fragment() {
     }
 
     private fun convertLength() {
-        TODO("Not yet implemented")
+        val inputLength = binding.inputValue.text.toString().toFloatOrNull()
+        val fromUnit = binding.fromSection.text.toString()
+        val toUnit = binding.toSection.text.toString()
+
+        if (inputLength != null) {
+            val convertedLength = when {
+                fromUnit == "Meter" && toUnit == "Centimeter" -> meterToCentimeter(inputLength)
+                fromUnit == "Centimeter" && toUnit == "Meter" -> centimeterToMeter(inputLength)
+                // Add more conversion cases here
+                else -> inputLength
+            }
+
+            binding.outputFrom.text = String.format("%.2f %s", inputLength, fromUnit)
+            binding.outputTo.text = String.format("%.2f %s", convertedLength, toUnit)
+            binding.outputCardView.visibility = View.VISIBLE
+        }
+    }
+
+    private fun meterToCentimeter(meter: Float): Float {
+        return meter * 100
+    }
+
+    private fun centimeterToMeter(centimeter: Float): Float {
+        return centimeter / 100
     }
 
 }
