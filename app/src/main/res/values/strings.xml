@@ -42,6 +42,7 @@
     <string name="this_is_a_logo_for_splash_screen">this is a logo for splash screen</string>
     <string name="dev_name">By\nJubayed Alam</string>
     <string name="splash_text">Unit Converter</string>
+    <string name="millisecond">Millisecond</string>
 
     <!-- res/values/strings.xml -->
     <!--    for time section -->
