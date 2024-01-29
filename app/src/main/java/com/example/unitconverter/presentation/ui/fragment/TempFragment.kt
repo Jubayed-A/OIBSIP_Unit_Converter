@@ -1,20 +1,25 @@
 package com.example.unitconverter.presentation.ui.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.unitconverter.R
+import androidx.fragment.app.Fragment
+import com.example.unitconverter.databinding.FragmentTeampBinding
 
 class TempFragment : Fragment() {
+
+    private lateinit var binding: FragmentTeampBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_teamp, container, false)
+        binding = FragmentTeampBinding.inflate(layoutInflater, container, false)
+
+
+
+        return binding.root
     }
 
 }
