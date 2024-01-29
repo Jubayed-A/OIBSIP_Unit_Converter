@@ -63,6 +63,7 @@ class LengthFragment : Fragment() {
 
             binding.outputFrom.text = String.format("%.2f %s", inputLength, fromUnit)
             binding.outputTo.text = String.format("%.2f %s", convertedLength, toUnit)
+            binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
             binding.outputCardView.visibility = View.VISIBLE
         }
     }
