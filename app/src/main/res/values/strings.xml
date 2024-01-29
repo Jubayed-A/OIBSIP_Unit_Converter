@@ -20,7 +20,7 @@
     <string name="length_welcome_text">Welcome to \nLength Section</string>
     <string name="hint_length">enter a number to conver any length...</string>
     <string name="output_length_text">Meter To Centimeter\n Conversion Result</string>
-    <string name="to">To</string>
+    <string name="equal">Equal TO</string>
     <string name="exm_c_m">1000 C.M</string>
     <string name="exm_m">10 M</string>
     <string name="welcome_currency_text">Welcome to \nCurrency Section</string>
@@ -82,10 +82,10 @@
     <string-array name="lengthSection">
         <item>Meter</item>
         <item>Centimeter</item>
-        <item>MilliMeter</item>
-        <item>MicroMeter</item>
-        <item>NanoMeter</item>
-        <item>KiloMeter</item>
+        <item>Millimeter</item>
+        <item>Micrometer</item>
+        <item>Nanometer</item>
+        <item>Kilometer</item>
     </string-array>
 
 
