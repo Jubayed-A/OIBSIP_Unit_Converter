@@ -64,23 +64,51 @@ class CurrencyFragment : Fragment() {
             val fromCurrency = binding.fromSection.text.toString()
             val toCurrency = binding.toSection.text.toString()
 
-            val convertedValue = when {
-                fromCurrency == getString(R.string.usd) && toCurrency == getString(R.string.eu) -> {
-                    inputValueStr * usdToEuRate
-                }
-
-                fromCurrency == getString(R.string.eu) && toCurrency == getString(R.string.usd) -> {
-                    inputValueStr * euToUsdRate
-                }
-
-                else -> {
-                    // Handle other conversions or display error
-                    0.0
-                }
+            val conversionRates = mapOf(
+                "USD" to mapOf(
+                    "EUR" to 0.85,
+                    "BDT" to 84.96, // Example conversion rate, please replace with actual rates
+                    "INR" to 73.05, // Example conversion rate, please replace with actual rates
+                    "CAD" to 1.27    // Example conversion rate, please replace with actual rates
+                ),
+                "EUR" to mapOf(
+                    "USD" to 1.18,  // Example conversion rate, please replace with actual rates
+                    "BDT" to 99.75, // Example conversion rate, please replace with actual rates
+                    "INR" to 86.10, // Example conversion rate, please replace with actual rates
+                    "CAD" to 1.55    // Example conversion rate, please replace with actual rates
+                ),
+                "BDT" to mapOf(
+                    "USD" to 0.012, // Example conversion rate, please replace with actual rates
+                    "EUR" to 0.010, // Example conversion rate, please replace with actual rates
+                    "INR" to 0.87,  // Example conversion rate, please replace with actual rates
+                    "CAD" to 0.016  // Example conversion rate, please replace with actual rates
+                ),
+                "INR" to mapOf(
+                    "USD" to 0.014, // Example conversion rate, please replace with actual rates
+                    "EUR" to 0.012, // Example conversion rate, please replace with actual rates
+                    "BDT" to 1.15,  // Example conversion rate, please replace with actual rates
+                    "CAD" to 0.018  // Example conversion rate, please replace with actual rates
+                ),
+                "CAD" to mapOf(
+                    "USD" to 0.79,  // Example conversion rate, please replace with actual rates
+                    "EUR" to 0.64,  // Example conversion rate, please replace with actual rates
+                    "BDT" to 62.75, // Example conversion rate, please replace with actual rates
+                    "INR" to 55.96  // Example conversion rate, please replace with actual rates
+                )
+            )
+            val conversionRate = conversionRates[fromCurrency]?.get(toCurrency)
+            if (conversionRate != null) {
+                val convertedAmount = inputValueStr * conversionRate
+                binding.outputFrom.text = String.format("%.2f %s", inputValueStr, fromCurrency)
+                binding.outputTo.text = String.format("%.2f %s", convertedAmount, toCurrency)
+                binding.outputCardView.visibility = View.VISIBLE
+                binding.outputFrom.text = "$inputValueStr $fromCurrency"
+                binding.outputTo.text = "$convertedAmount $toCurrency"
+            } else {
+                // Handle unsupported conversion
+                // You can display a message or take any other appropriate action
             }
 
-            binding.outputFrom.text = "$inputValueStr $fromCurrency"
-            binding.outputTo.text = "$convertedValue $toCurrency"
         }
     }
 
