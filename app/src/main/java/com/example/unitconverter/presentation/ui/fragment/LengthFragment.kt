@@ -151,7 +151,7 @@ class LengthFragment : Fragment() {
             binding.outputTo.text = String.format("%.2f %s", convertedLength, toUnit)
             binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
             binding.outputCardView.visibility = View.VISIBLE
-        }else{
+        } else {
             // Handle empty input
             Toast.makeText(
                 requireContext(),
