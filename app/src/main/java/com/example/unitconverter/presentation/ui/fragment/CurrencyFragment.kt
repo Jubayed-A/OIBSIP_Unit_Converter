@@ -105,7 +105,11 @@ class CurrencyFragment : Fragment() {
                 binding.outputTo.text = String.format("%.2f %s", convertedAmount, toCurrency)
                 binding.outputCardView.visibility = View.VISIBLE
                 binding.welcomeOutput.text = "$fromCurrency To $toCurrency \nConversion Result"
-                Toast.makeText(requireContext(), "This is not the Updated Data!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "This is not the Updated Data!",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 // Handle unsupported conversion
                 Toast.makeText(
@@ -114,8 +118,6 @@ class CurrencyFragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-
         }
     }
-
 }
