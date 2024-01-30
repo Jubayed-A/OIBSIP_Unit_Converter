@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.unitconverter.R
 import com.example.unitconverter.databinding.FragmentCurrencyBinding
@@ -66,34 +67,34 @@ class CurrencyFragment : Fragment() {
 
             val conversionRates = mapOf(
                 "USD" to mapOf(
-                    "EUR" to 0.85,
-                    "BDT" to 84.96, // Example conversion rate, please replace with actual rates
-                    "INR" to 73.05, // Example conversion rate, please replace with actual rates
-                    "CAD" to 1.27    // Example conversion rate, please replace with actual rates
+                    "EUR" to 0.92,
+                    "BDT" to 109.69,
+                    "INR" to 83.14,
+                    "CAD" to 1.34
                 ),
                 "EUR" to mapOf(
-                    "USD" to 1.18,  // Example conversion rate, please replace with actual rates
-                    "BDT" to 99.75, // Example conversion rate, please replace with actual rates
-                    "INR" to 86.10, // Example conversion rate, please replace with actual rates
-                    "CAD" to 1.55    // Example conversion rate, please replace with actual rates
+                    "USD" to 1.08,
+                    "BDT" to 118.88,
+                    "INR" to 90.11,
+                    "CAD" to 1.45
                 ),
                 "BDT" to mapOf(
-                    "USD" to 0.012, // Example conversion rate, please replace with actual rates
-                    "EUR" to 0.010, // Example conversion rate, please replace with actual rates
-                    "INR" to 0.87,  // Example conversion rate, please replace with actual rates
-                    "CAD" to 0.016  // Example conversion rate, please replace with actual rates
+                    "USD" to 0.0091,
+                    "EUR" to 0.0084,
+                    "INR" to 0.76,
+                    "CAD" to 0.012
                 ),
                 "INR" to mapOf(
-                    "USD" to 0.014, // Example conversion rate, please replace with actual rates
-                    "EUR" to 0.012, // Example conversion rate, please replace with actual rates
-                    "BDT" to 1.15,  // Example conversion rate, please replace with actual rates
-                    "CAD" to 0.018  // Example conversion rate, please replace with actual rates
+                    "USD" to 0.012,
+                    "EUR" to 0.011,
+                    "BDT" to 1.32,
+                    "CAD" to 0.016
                 ),
                 "CAD" to mapOf(
-                    "USD" to 0.79,  // Example conversion rate, please replace with actual rates
-                    "EUR" to 0.64,  // Example conversion rate, please replace with actual rates
-                    "BDT" to 62.75, // Example conversion rate, please replace with actual rates
-                    "INR" to 55.96  // Example conversion rate, please replace with actual rates
+                    "USD" to 0.75,
+                    "EUR" to 0.69,
+                    "BDT" to 81.81,
+                    "INR" to 62.01
                 )
             )
 
@@ -103,11 +104,15 @@ class CurrencyFragment : Fragment() {
                 binding.outputFrom.text = String.format("%.2f %s", inputValueStr, fromCurrency)
                 binding.outputTo.text = String.format("%.2f %s", convertedAmount, toCurrency)
                 binding.outputCardView.visibility = View.VISIBLE
-                binding.outputFrom.text = "$inputValueStr $fromCurrency"
-                binding.outputTo.text = "$convertedAmount $toCurrency"
+                binding.welcomeOutput.text = "$fromCurrency To $toCurrency \nConversion Result"
+                Toast.makeText(requireContext(), "This is not the Updated Data!", Toast.LENGTH_SHORT).show()
             } else {
                 // Handle unsupported conversion
-                // You can display a message or take any other appropriate action
+                Toast.makeText(
+                    requireContext(),
+                    "Invalid input. Please enter a valid Currency, OR Chose Different Country",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
 
         }
