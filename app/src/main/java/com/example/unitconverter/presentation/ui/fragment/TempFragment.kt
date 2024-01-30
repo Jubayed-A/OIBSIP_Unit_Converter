@@ -82,7 +82,7 @@ class TempFragment : Fragment() {
             binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
             binding.outputCardView.visibility = View.VISIBLE
         } else {
-            // Handle unsupported conversion
+            // Handle empty input
             Toast.makeText(
                 requireContext(),
                 "Invalid input. Please enter a valid temperature!",
