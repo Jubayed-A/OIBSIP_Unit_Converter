@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.unitconverter.R
@@ -21,7 +20,7 @@ class TimeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentTimeBinding.inflate(layoutInflater, container, false)
 
         // time conversion section
@@ -67,9 +66,9 @@ class TimeFragment : Fragment() {
                 // Set the outputCardView to visible
                 binding.outputCardView.visibility = View.VISIBLE
 
-                binding.outputFrom.setText("$inputNumber  $fromMenuOption")
-                binding.outputTo.setText("$result $toMenuOption")
-                binding.welcomeOutput.setText("$fromMenuOption To $toMenuOption \nConversion Result")
+                binding.outputFrom.text = "$inputNumber  $fromMenuOption"
+                binding.outputTo.text = "$result $toMenuOption"
+                binding.welcomeOutput.text = "$fromMenuOption To $toMenuOption \nConversion Result"
             } else {
                 // Handle the case when the input is not a valid number
                 Toast.makeText(
