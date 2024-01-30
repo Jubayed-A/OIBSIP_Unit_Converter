@@ -4,6 +4,6 @@
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/accent</item>
         <item name="colorPrimaryVariant">@color/accent</item>
-        <item name="android:statusBarColor">@color/accent</item>
+        <item name="android:statusBarColor">@color/teal</item>
     </style>
 </resources>

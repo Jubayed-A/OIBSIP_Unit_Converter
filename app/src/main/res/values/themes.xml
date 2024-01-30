@@ -4,7 +4,7 @@
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/accent</item>
          <item name="colorPrimaryVariant">@color/accent</item>
-         <item name="android:statusBarColor">@color/accent</item>
+         <item name="android:statusBarColor">@color/teal</item>
     </style>
 
     <style name="Theme.UnitConverter" parent="Base.Theme.UnitConverter" />
