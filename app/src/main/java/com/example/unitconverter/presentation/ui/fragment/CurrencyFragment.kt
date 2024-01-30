@@ -13,8 +13,6 @@ import com.example.unitconverter.databinding.FragmentCurrencyBinding
 
 class CurrencyFragment : Fragment() {
 
-    private val usdToEuRate = 0.85
-    private val euToUsdRate = 1.18
     private lateinit var binding: FragmentCurrencyBinding
 
     override fun onCreateView(
@@ -31,7 +29,7 @@ class CurrencyFragment : Fragment() {
         // from menu drop down section
         val arrayAdapter = ArrayAdapter(
             requireContext(),
-            com.example.unitconverter.R.layout.drop_down_item,
+            R.layout.drop_down_item,
             fromMenu
         )
         binding.fromSection.setAdapter(arrayAdapter)
