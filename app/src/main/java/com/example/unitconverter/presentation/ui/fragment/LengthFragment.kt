@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.unitconverter.R
 import com.example.unitconverter.databinding.FragmentLengthBinding
@@ -150,6 +151,13 @@ class LengthFragment : Fragment() {
             binding.outputTo.text = String.format("%.2f %s", convertedLength, toUnit)
             binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
             binding.outputCardView.visibility = View.VISIBLE
+        }else{
+            // Handle empty input
+            Toast.makeText(
+                requireContext(),
+                "Invalid input. Please enter a valid Length!",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
