@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.unitconverter.R
 import com.example.unitconverter.databinding.FragmentTeampBinding
@@ -80,6 +81,13 @@ class TempFragment : Fragment() {
             binding.outputTo.text = String.format("%.2f %s", convertedTemperature, toUnit)
             binding.welcomeOutput.text = "$fromUnit To $toUnit\nConversion Result"
             binding.outputCardView.visibility = View.VISIBLE
+        } else {
+            // Handle unsupported conversion
+            Toast.makeText(
+                requireContext(),
+                "Invalid input. Please enter a valid temperature!",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
