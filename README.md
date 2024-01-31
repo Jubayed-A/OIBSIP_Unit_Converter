@@ -1,21 +1,20 @@
-## This is a unit converter app for andoid platfor
-
 <div align="center">  
   <img src="https://github.com/Jubayed-A/OIBSIP_Unit_Converter/assets/106887389/2b13159a-56d9-4f73-8d5e-0ee82a686b7e" alt="Weather" style="width: 150px; height: 150px; object-fit: contain; margin-right: 10px;">  
  <h1 style="display: inline-block; margin: 0; vertical-align: middle;">Unit Converter Application</h1>  
 </div>  
 
-Welcome to the Unit Converter App project, This is a simple Android application for Convert multiple unit sections, built using the MVVM architecture and Room Database. This app is built for Oaisis Infobyte for Internship Project.
+Welcome to the Unit Converter App project, This is a simple Android application for Convert multiple unit sections, built using the Google Meterial Design and Responsive. This app is built for Oaisis Infobyte for the Internship Project.
 <!--
 **APK: https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/releases/download/v1.0/notes_app.apk** 
+-->
 
 ## Demo
 <div align="center"
   style="display:flex; flex-wrap:wrap;">
-  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/95514bb6-1a6d-4a5c-ae67-9fc8eeb42b9f" style="flex:1; margin:5px;" height="450">
-  <img src="https://github.com/Jubayed-A/Notes-Application-With-MVVM-and-Room-Database/assets/106887389/9326468e-e77d-45de-8e1b-f4577c5b5f51" style="flex:1; margin:5px;" height="450">
+  <img src="https://github.com/Jubayed-A/OIBSIP_Unit_Converter/assets/106887389/f2cbaa25-c337-4f30-9b2b-b2f61b1d963e" style="flex:1; margin:5px;" height="450">
+  <img src="https://github.com/Jubayed-A/OIBSIP_Unit_Converter/assets/106887389/4a8b7aed-70bf-4666-97fa-dd9d12d95b7b" style="flex:1; margin:5px;" height="450">
 </div>
-
+<!--
 ## Screenshots
 <div align="center"
   style="display:flex; flex-wrap:wrap;">
@@ -30,21 +29,16 @@ Welcome to the Unit Converter App project, This is a simple Android application 
 -->
 ### Key Features
 
-- MVVM Architecture: The application follows the Model-View-ViewModel architectural pattern for a clean and organized codebase.
-
-- Room Database: Utilizes the Room persistence library for data storage, providing a local SQLite database to store todo.
-
-- Filtering and Sorting: Allows users to filter notes based on priority and sort them accordingly.
-- Search Functionality: Provides a search feature to find notes based on titles and subtitles.
+- Material Design: Desing with Google material desing 
+- Grid Layout: Using grid layout 
+- AutoCompleted Text: for using sniper 
 - Responsive UI: Designed with responsive UI elements, including a StaggeredGridLayoutManager for a visually appealing layout.
-- Light/dark mode customised based on your phone.
+- Light/dark mode customized based on your phone.
 - 
 ### Technologies Used
 
 We've embraced modern technologies to make this app robust and efficient:
 
-- MVVM and Stateflow.
-- Room Database.
 - View Binding.
 - Navigation components with Safe Args Kotlin-Parcelize.
 - Pagination (manual implementation).
@@ -63,9 +57,6 @@ git clone: https://github.com/Jubayed-A/OIBSIP_Unit_Converter.git
 - Click on the "Run" button in Android Studio to build and run the application.
 - 
 ### Dependencies
-- Android Architecture Components: Using LiveData and ViewModel for efficient UI updates and maintaining UI-related data.
-
-- Room Database: A robust and efficient SQLite object mapping library.
 
 - Navigation Component: Simplifies the implementation of navigation within the app.
 
